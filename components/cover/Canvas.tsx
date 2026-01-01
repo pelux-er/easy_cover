@@ -116,7 +116,7 @@ export default function Canvas() {
   };
 
   return (
-    <div className="flex-1 bg-gray-100 dark:bg-gray-900 overflow-hidden relative h-full w-full min-w-0">
+    <div className="flex-1 bg-gray-100 dark:bg-gray-900 overflow-hidden relative w-full h-[40vh] md:h-full min-w-0 flex-shrink-0 md:flex-shrink">
       {/* Container for scaling */}
       <div
         ref={containerRef}

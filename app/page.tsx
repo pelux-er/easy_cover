@@ -3,7 +3,7 @@ import Canvas from "@/components/cover/Canvas";
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-full bg-background overflow-hidden">
+    <main className="flex flex-col-reverse md:flex-row h-screen w-full bg-background overflow-hidden">
       <Controls />
       <Canvas />
     </main>

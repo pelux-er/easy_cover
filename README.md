@@ -58,6 +58,26 @@ npm run dev
 4.  **配置背景**：选择纯色背景或上传本地图片。使用“适应”或“铺满”按钮快速调整图片布局。
 5.  **导出**：点击底部的“导出封面图”按钮保存图片。
 
+## 📦 部署
+
+本项目已配置为静态导出 (`output: 'export'`)，可轻松部署到任何静态托管服务。
+
+### Vercel 部署
+
+1.  Fork 本仓库。
+2.  在 Vercel 中导入项目。
+3.  Vercel 会自动识别 Next.js 项目。
+4.  **重要**：确保构建命令为 `npm run build` (默认)，输出目录默认为 `out` (Next.js 静态导出默认目录)。
+    *   注：本项目已在 `next.config.ts` 中启用了 `output: 'export'`，Vercel 会自动处理，无需额外配置。
+
+### GitHub Pages 部署
+
+1.  构建项目：
+    ```bash
+    npm run build
+    ```
+2.  将生成的 `out` 目录内容推送到 `gh-pages` 分支。
+
 ## 📄 许可证
 
 本项目采用 [AGPL-3.0](LICENSE) 许可证。
