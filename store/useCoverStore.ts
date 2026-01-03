@@ -20,6 +20,12 @@ interface TextSettings {
   x: number;
   y: number;
   rotation: number;
+  // Split settings
+  isSplit: boolean;
+  leftOffsetX: number;
+  leftOffsetY: number;
+  rightOffsetX: number;
+  rightOffsetY: number;
 }
 
 interface IconSettings {
@@ -92,6 +98,11 @@ export const useCoverStore = create<CoverState>((set) => ({
     x: 0,
     y: 0,
     rotation: 0,
+    isSplit: false,
+    leftOffsetX: 0,
+    leftOffsetY: 0,
+    rightOffsetX: 0,
+    rightOffsetY: 0,
   },
   icon: {
     name: 'logos:react',

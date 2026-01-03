@@ -14,7 +14,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { IconPicker } from '@/components/cover/IconPicker';
 import { Separator } from '@/components/ui/separator';
-import { Download, RotateCcw, Maximize, Github, ExternalLink } from 'lucide-react';
+import { Download, RotateCcw, Maximize, Github, ExternalLink, Settings2 } from 'lucide-react';
 import { toPng } from 'html-to-image';
 
 // Helper component for Reset Button
@@ -29,6 +29,54 @@ const ResetButton = ({ onClick, tooltip = "重置" }: { onClick: () => void, too
         <RotateCcw className="h-3 w-3" />
     </Button>
 );
+
+const SPLIT_PRESETS = [
+    { name: '默认', left: { x: 0, y: 0 }, right: { x: 0, y: 0 } },
+    { name: '上下错位', left: { x: 0, y: -40 }, right: { x: 0, y: 40 } },
+    { name: '左右分离', left: { x: -60, y: 0 }, right: { x: 60, y: 0 } },
+    { name: '对角分离', left: { x: -40, y: -40 }, right: { x: 40, y: 40 } },
+    { name: '聚拢', left: { x: 20, y: 0 }, right: { x: -20, y: 0 } },
+];
+
+const SliderWithInput = ({ 
+    label, 
+    value, 
+    onChange, 
+    min, 
+    max, 
+    step = 1 
+}: { 
+    label: string, 
+    value: number, 
+    onChange: (val: number) => void, 
+    min: number, 
+    max: number, 
+    step?: number 
+}) => {
+    return (
+        <div className="space-y-1.5">
+            <div className="flex justify-between items-center">
+                <Label className="text-[10px] text-muted-foreground">{label}</Label>
+                <Input
+                    type="number"
+                    value={value}
+                    onChange={(e) => {
+                        const val = parseFloat(e.target.value);
+                        if (!isNaN(val)) onChange(val);
+                    }}
+                    className="h-5 w-12 text-[10px] px-1 text-right"
+                />
+            </div>
+            <Slider 
+                value={[value]} 
+                min={min} 
+                max={max} 
+                step={step} 
+                onValueChange={(v) => onChange(v[0])} 
+            />
+        </div>
+    );
+};
 
 export default function Controls() {
   const store = useCoverStore();

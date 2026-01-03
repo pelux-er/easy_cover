@@ -102,11 +102,11 @@ export default function Canvas() {
   };
 
   // Helper to render Text
-  const renderText = (content: string) => (
+  const renderText = (content: string, offsetX: number = 0, offsetY: number = 0) => (
       <div
           className="whitespace-pre text-center leading-tight"
           style={{
-              transform: `rotate(${text.rotation}deg)`,
+              transform: `translate(${offsetX}px, ${offsetY}px) rotate(${text.rotation}deg)`,
               fontSize: `${text.fontSize}px`,
               color: text.color,
               fontWeight: text.fontWeight,
@@ -120,10 +120,35 @@ export default function Canvas() {
   // Determine Layout Content
   const renderContent = () => {
       // Default to Overlay Layout
+      let leftContent = text.content;
+      let rightContent = '';
+
+      if (text.isSplit && text.content.length > 1) {
+          const mid = Math.ceil(text.content.length / 2);
+          leftContent = text.content.slice(0, mid);
+          rightContent = text.content.slice(mid);
+      }
+
       return (
           <div className="grid place-items-center relative">
-              <div className="z-10">{renderText(text.content)}</div>
-              <div className="z-20 absolute">{renderIcon()}</div>
+              <div className="z-10 flex items-center justify-center">
+                  {text.isSplit ? (
+                      <>
+                        {renderText(leftContent, text.leftOffsetX, text.leftOffsetY)}
+                        {renderText(rightContent, text.rightOffsetX, text.rightOffsetY)}
+                      </>
+                  ) : (
+                      renderText(text.content, text.x, text.y)
+                  )}
+              </div>
+              <div 
+                  className="z-20 absolute"
+                  style={{
+                      transform: `translate(${icon.x}px, ${icon.y}px)`
+                  }}
+              >
+                  {renderIcon()}
+              </div>
           </div>
       );
   };
