@@ -1,5 +1,7 @@
 # EasyCover - AcoFork
 
+<img width="1893" height="1390" alt="a7db63bb841d2b78d604e2662c50365c" src="https://github.com/user-attachments/assets/e8379b3a-2806-4069-ab47-9a7487c1dd82" />
+
 简单、优雅的封面图生成工具。纯客户端运行，保护您的隐私。
 
 ## ✨ 特性
